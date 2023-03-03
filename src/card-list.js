@@ -1,7 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import "software-card";
-
-const logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png";
+import "jeff_taylor/software-card.js";
 
 export class CardList extends LitElement {
   static get properties() {
@@ -22,7 +20,8 @@ export class CardList extends LitElement {
 
   render() {
     return html`
-    <software-card></software-card>
+      <software-card>
+      </software-card>
     `;
   }
   

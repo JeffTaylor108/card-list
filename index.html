@@ -19,51 +19,11 @@
       max-width: 200px;
     }
   </style>
-  <title>software-card</title>
+  <title>card-list</title>
 </head>
 
 <body>
-  <div class="buttons">
-    <button class="duplicate">Duplicate last card</button>
-    <button class="modifytitle">Change Name</button>
-    <button id="deletelastcard">Delete</button>
-    <button id="changeBackground">Change background color</button>
-  </div>
-  <div id="app">
-    <software-card>
-    </software-card>
-  </div>
-  <script type="module" src="./src/card-list.js"></script>
-  <script>    
-
-document.querySelector('#changeBackground').addEventListener('click', (e) => {
-  console.log('#changeBackground')
-  document.querySelector('.wrapper').style.backgroundColor = '#90EE90'
-});
-
-document.querySelector('.duplicate').addEventListener('click', function(e) {
-  const itemToClone = document.querySelector('software-card').cloneNode();
-  document.querySelector('#app').appendChild(itemToClone);
-});
-
-
-document.querySelector('.modifytitle').addEventListener('click', function(e) {
-  let name = prompt("Enter new name: ");
-  if (name) {
-    document.querySelector('software-card').name = name;
-  }
-});
-
-
-document.querySelector('#deletelastcard').addEventListener('click', function(e) {
-    if (document.querySelector('#app :last-child') !== document.querySelector('software-card')) {
-      document.querySelector('#app :last-child').remove();      
-    }
-    else {
-      alert("You cannot delete the last card");
-    }
-});
-  </script>
+  <card-list></card-list>
 </body>
 
 </html>
