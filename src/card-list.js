@@ -20,8 +20,11 @@ export class CardList extends LitElement {
 
   render() {
     return html`
-      <software-card>
-      </software-card>
+      <software-card></software-card>
+      <software-card></software-card>
+      <software-card></software-card>
+      <software-card></software-card>
+      <software-card></software-card>
     `;
   }
   
