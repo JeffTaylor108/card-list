@@ -6,13 +6,7 @@ const logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_lo
 export class CardList extends LitElement {
   static get properties() {
     return {
-      name: {
-        type: String,
-        reflect: true
-      },
-      fname: { type: String},
-      top: { type: String},
-      softwareDetails: { type: String},
+      
     }
   }
 
